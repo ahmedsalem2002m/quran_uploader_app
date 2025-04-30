@@ -21,7 +21,7 @@ class UploadService {
     if (response.statusCode == 200) {
       return {'success': true, 'message': body};
     } else if (response.statusCode == 400) {
-      return {'success': false, 'message': 'الملف يجب أن يكون بصيغة wav فقط'};
+      return {'success': false, 'message': 'الملف يجب أن يكون بصيغة wav أو mp3 '};
     } else {
       print('Error Body: $body');
       return {'success': false, 'message': 'حدث خطأ أثناء رفع الملف'};
